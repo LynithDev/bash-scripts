@@ -1,0 +1,4 @@
+retroarch
+htop
+neofetch
+nano

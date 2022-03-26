@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Do a space or a newline for every command
-apps=(
-	"retroarch"
-)
-
 # Script
 printf "\033c\n"
 
@@ -13,6 +8,18 @@ RD="\u001b[31m"
 RT="\u001b[0m"
 YW="\u001b[33m"
 GN="\u001b[32m"
+
+apps=()
+
+while IFS= read -r line; do
+	for entry in "/usr/bin/"*; do
+		if [[ $entry == "/usr/bin/$line" ]]
+		then
+			apps+=("${line}")
+		fi
+	done
+done < ./apps.txt
+
 
 ask() {
 	while true; do
