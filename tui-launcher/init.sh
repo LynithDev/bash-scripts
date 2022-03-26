@@ -18,7 +18,7 @@ while IFS= read -r line; do
 			apps+=("${line}")
 		fi
 	done
-done < ./apps.txt
+done < /opt/bash-scripts/apps.txt
 
 
 ask() {
