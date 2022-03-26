@@ -35,7 +35,7 @@ mv /opt/bash-scripts-master /opt/bash-scripts
 
 # Set aliases
 while IFS= read -r line; do
-	if [[ ! -z $(grep "alias ${line}" $ACTIVE_PATH) ]]
+	if [[ ! -z $(grep 'alias ${line}' $ACTIVE_PATH) ]]
 	then
 		echo "Duplicate"
 	else
