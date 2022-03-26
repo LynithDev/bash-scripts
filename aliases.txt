@@ -1,0 +1,1 @@
+launcher="/opt/bash-scripts/tui-launcher/init.sh"
