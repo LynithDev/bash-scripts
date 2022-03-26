@@ -39,7 +39,7 @@ while IFS= read -r line; do
 	then
 		echo "Duplicate"
 	else
-		echo "alias ${line}" >> $ACTIVE_PATH
+		echo 'alias ${line}' >> $ACTIVE_PATH
 	fi
 done < /opt/bash-scripts/aliases.txt	
 
