@@ -1,1 +1,2 @@
 launcher="/opt/bash-scripts/tui-launcher/init.sh"
+mount-external="/opt/bash-scripts/mtp/init.sh"
